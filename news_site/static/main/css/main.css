@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+
+img {
+    border-radius: 6px;
+    margin: 20px;
+}
+
+h2 {
+    text-decoration: none;
+    font-family: 'DM Serif Display';
+    color: black;
+}
+
+p {
+    font-family: 'Segoe UI';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.box {
+    border: 1px solid red;
+}
+
+.container {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-rows: 52px 1fr 220px;
+}
+
+#navbar {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-bottom: 1px solid grey;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#navbar a {
+    font-family: 'Segoe UI';
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    color: black
+}
+
+#navbar a:hover {
+    color: grey;
+}
+
+#navbar li {
+    float: left;
+}
+
+#site-title {
+    color: black;
+    text-decoration: none;
+    font-family: 'DM Serif Display' !important;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px !important;
+    padding-bottom: 8px !important;
+    border-right: 1px solid grey;
+}
+
+#site-title:hover {
+    color: black !important;
+}
+
+#footer #site-title {
+    color: black;
+    text-decoration: none;
+    font-family: 'DM Serif Display' !important;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0px !important;
+    border: none !important;
+    
+}
+
+#footer #site-title:hover {
+    color: black !important;
+    background-color: white !important;
+    border-bottom: none !important;
+}
+
+#content {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    min-height: 600px;
+}
+
+#footer {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-top: 1px solid grey;
+}
+
+.post {
+    display: flex;
+    margin: 5px;
+}
+

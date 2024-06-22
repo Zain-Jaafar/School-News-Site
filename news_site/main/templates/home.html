@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+{% endblock stylesheet %}
+
+{% block content %}
+
+<div id="content">
+    <div class="container">
+    <br>
+    {% for paper in object_list %}
+    
+    <a href="{% url 'paper-detail' paper.pk %}">
+        <div class="post">
+            <div id="post-image" style="background: url('{{ paper.image.url }}') no-repeat; background-size: contain; height: 360px; width: 640px; min-height: 360px; min-width: 640px"></div>
+            <div>
+                <h2>{{ paper.title }}</h2>
+                <p>{{ paper.description }}</p>
+                <p>{{ paper.date }}</p>
+            </div>
+        </div>
+    </a>
+    
+
+    {% endfor %}
+    </div>
+</div>
+
+{% include 'footer.html' %}
+
+{% endblock content %}
+

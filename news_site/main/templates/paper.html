@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'main/css/paper.css' %}">
+{% endblock stylesheet %}
+
+{% block content %}
+<div id="pdf-container">
+    <iframe src="{{ paper.content.url }}#toolbar=0&scrollbar=0&zoom=100"></iframe>
+</div>
+{% endblock content %}

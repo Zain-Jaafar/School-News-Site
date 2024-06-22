@@ -1,0 +1,27 @@
+<!-- 
+    TODO: 
+    - STYLE HOME
+    - DEPLOY!
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block stylesheet %}{% endblock stylesheet %}
+    <link rel="icon" href="{{ BASEDIR }}/static/main/img/favicon.png" type="image/x-icon"/>
+    <title>BDSC Newspaper</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        {% include 'navbar.html' %}
+        
+        {% block content %}
+        {% endblock content %}
+
+    </div>
+</body>
+</html>

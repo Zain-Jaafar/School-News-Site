@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+{% endblock stylesheet %}
+
+{% block content %}
+<div id="content">
+    <br>
+    <div class="container">
+        <p>Welcome to the BDSC Newspaper! <br> 
+           As the voice of our vibrant school community, we are dedicated to delivering timely, insightful, and engaging content that reflects the diverse interests and talents of our students. 
+           Our passionate team of student journalists works tirelessly to bring you the latest news, captivating stories, and thought-provoking editorials, all while honing their writing and reporting skills. <br>
+           Whether you're looking for school updates, event coverage, or unique perspectives, the BDSC Newspaper is your go-to source for all things happening at <br> Botany Downs Secondary College. <br>
+           Join us in celebrating the creativity and enthusiasm of our student body!</p>
+    </div>
+</div>
+
+{% include 'footer.html' %}
+
+{% endblock content %}
