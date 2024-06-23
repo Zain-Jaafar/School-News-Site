@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
-from dotenv import load_dotenv, dotenv_values
+from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -27,12 +27,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True if os.getenv("DEBUG") == "True" else False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS").replace("'", "").strip('][').split(', ')
 
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+
+SESSION_COOKIE_SECURE = True if os.getenv("SESSION_COOKIE_SECURE") == "True" else False
+CSRF_COOKIE_SECURE = True if os.getenv("CSRF_COOKIE_SECURE") == "True" else False
+#CSRF_TRUSTED_ORIGINS = os.getenv("CSRF_TRUSTED_ORIGINS").replace("'", "").strip('][').split(', ')
 
 # Application definition
 
@@ -56,7 +58,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "news_site.urls"
+ROOT_URLCONF = os.getenv("ROOT_URLCONF")
 
 TEMPLATES = [
     {
