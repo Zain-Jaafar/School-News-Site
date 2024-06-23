@@ -12,6 +12,8 @@ class Paper(models.Model):
     content = models.FileField(upload_to="papers", null=True)
     date = models.DateField(auto_now_add=True)
     
+    slug = models.SlugField(max_length=200, default="", null=False)
+    
     def __str__(self) -> str:
         return self.title
 

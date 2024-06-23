@@ -12,10 +12,10 @@
     <br>
     {% for paper in object_list %}
     
-    <a href="{% url 'paper-detail' paper.pk %}">
+    <a href="{% url 'paper-detail' paper.slug %}">
         <div class="post">
-            <div id="post-image" style="background: url('{{ paper.image.url }}') no-repeat; background-size: contain; height: 360px; width: 640px; min-height: 360px; min-width: 640px"></div>
-            <div>
+            <div class="post-image" style="background: url('{{ paper.image.url }}') no-repeat; background-size: contain;"></div>
+            <div class="post-text">
                 <h2>{{ paper.title }}</h2>
                 <p>{{ paper.description }}</p>
                 <p>{{ paper.date }}</p>

@@ -126,3 +126,13 @@ a {
     margin: 5px;
 }
 
+.post-image { 
+    height: 360px; 
+    width: 640px; 
+    min-height: 360px; 
+    min-width: 640px;
+}
+
+.post-text {
+    padding: 10px;
+}
