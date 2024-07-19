@@ -7,26 +7,25 @@
 
 {% block content %}
 
-<div id="content">
-    <div class="container">
+<main id="main">
     <br>
-    {% for paper in object_list %}
-    
-    <a href="{% url 'paper-detail' paper.slug %}">
-        <div class="post">
-            <div class="post-image" style="background: url('{{ paper.image.url }}') no-repeat; background-size: contain;"></div>
-            <div class="post-text">
-                <h2>{{ paper.title }}</h2>
-                <p>{{ paper.description }}</p>
-                <p>{{ paper.date }}</p>
-            </div>
-        </div>
-    </a>
-    
+    <div class="container">
+        {% for paper in object_list %}
+            <article class="post">
+                <a href="{% url 'paper-detail' paper.slug %}">
+                    <img src="{{ paper.image.url }}" alt="cool pic">
+                    <div class="post-text">
+                        <h2>{{ paper.title }}</h2>
+                        <p>{{ paper.description }}</p>
+                        <p>{{ paper.date }}</p>
+                    </div>
+                </a>
+            </article>
+            <br>
 
-    {% endfor %}
+        {% endfor %}
     </div>
-</div>
+</main>
 
 {% include 'footer.html' %}
 
