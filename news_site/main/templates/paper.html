@@ -7,6 +7,10 @@
 
 {% block content %}
 <div id="pdf-container">
-    <iframe src="{{ paper.content.url }}#toolbar=0&scrollbar=0&zoom=100"></iframe>
+    <iframe src="{{ paper.content.url }}#toolbar=0&scrollbar=0&zoom=65"></iframe>
+</div>
+
+<div id="pdf-container-mobile">
+    <iframe src="{{ paper.content.url }}#toolbar=1&scrollbar=1&view=FitH"></iframe>
 </div>
 {% endblock content %}

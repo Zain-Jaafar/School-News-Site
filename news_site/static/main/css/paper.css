@@ -72,6 +72,13 @@ a {
     grid-area: main;
     min-width: 100%;
     min-height: 100%;
+    display: none;
+}
+
+#pdf-container-mobile {
+    grid-area: main;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 iframe {
@@ -102,5 +109,13 @@ iframe {
     #navbar-container {
         margin-left: var(--container-size-desktop);
         margin-right: var(--container-size-desktop);
+    }
+
+    #pdf-container {
+        display: block;
+    }
+    
+    #pdf-container-mobile {
+        display: none;
     }
 }
