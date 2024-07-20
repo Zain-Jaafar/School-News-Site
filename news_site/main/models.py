@@ -1,5 +1,5 @@
 from django.db import models
-from datetime import datetime, date
+from datetime import date
 
 # Create your models here.
 
@@ -10,7 +10,7 @@ class Paper(models.Model):
     image = models.ImageField(upload_to="images", null=True)
     description = models.TextField(max_length=400)
     content = models.FileField(upload_to="papers", null=True)
-    date = models.DateField(auto_now_add=True)
+    date = models.DateField(default=date.today)
     
     slug = models.SlugField(max_length=200, default="", null=False)
     

@@ -17,7 +17,7 @@
                     <div class="post-text">
                         <h2>{{ paper.title }}</h2>
                         <p>{{ paper.description }}</p>
-                        <p>{{ paper.date }}</p>
+                        <p>{{ paper.date|date:"F Y" }}</p>
                     </div>
                 </a>
             </article>

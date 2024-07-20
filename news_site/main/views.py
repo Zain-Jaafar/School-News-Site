@@ -16,6 +16,10 @@ class PaperView(DetailView):
 class AboutView(TemplateView):
     template_name = "about.html"
 
+class ArchiveView(ListView):
+    model = Paper
+    template_name = "archive.html"
+
 
 # def render_items(request, item_name):
 #     item = get_object_or_404(Paper, content=item_name)

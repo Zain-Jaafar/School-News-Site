@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+{% endblock stylesheet %}
+
+{% block content %}
+
+<main id="main">
+    <br>
+    <div class="container">
+        <ul>
+            {% for paper in object_list %}
+                <li><a class="archive-link" href="{% url 'paper-detail' paper.slug %}">{{ paper.date|date:"F Y" }} | {{ paper.title }}</a></li>
+            {% endfor %}
+        </ul>
+        
+    </div>
+</main>
+
+{% include 'footer.html' %}
+
+{% endblock content %}
