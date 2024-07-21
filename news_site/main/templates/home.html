@@ -16,7 +16,7 @@
                     <img src="{{ paper.image.url }}" alt="cool pic">
                     <div class="post-text">
                         <h2>{{ paper.title }}</h2>
-                        <p>{{ paper.description }}</p>
+                        <p>{{ paper.description|safe }}</p>
                         <p>{{ paper.date|date:"F Y" }}</p>
                     </div>
                 </a>

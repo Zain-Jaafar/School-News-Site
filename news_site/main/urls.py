@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from .views import HomeView, PaperView, AboutView, ArchiveView
 
 urlpatterns = [
@@ -6,4 +6,5 @@ urlpatterns = [
     path("paper/<slug:slug>", PaperView.as_view(), name="paper-detail"),
     path("about", AboutView.as_view(), name="about"),
     path("archive", ArchiveView.as_view(), name="archive"),
+    path("ckeditor5/", include('django_ckeditor_5.urls')),
 ]

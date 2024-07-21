@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import date
+from django_ckeditor_5.fields import CKEditor5Field
 
 # Create your models here.
 
@@ -8,7 +9,7 @@ from datetime import date
 class Paper(models.Model):
     title = models.CharField(max_length=50)
     image = models.ImageField(upload_to="images", null=True)
-    description = models.TextField(max_length=400)
+    description = CKEditor5Field(blank=True, null=True, config_name="extends")
     content = models.FileField(upload_to="papers", null=True)
     date = models.DateField(default=date.today)
     
