@@ -8,6 +8,7 @@ from .models import Paper
 class HomeView(ListView):
     model = Paper
     template_name = "home.html"
+    ordering = ["-date"]
 
 class PaperView(DetailView):
     model = Paper
@@ -19,6 +20,7 @@ class AboutView(TemplateView):
 class ArchiveView(ListView):
     model = Paper
     template_name = "archive.html"
+    ordering = ["date"]
 
 
 # def render_items(request, item_name):
