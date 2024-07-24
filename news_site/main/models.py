@@ -1,6 +1,5 @@
 from django.db import models
 from datetime import date
-from tinymce import models as tinymce_models
 
 # Create your models here.
 
@@ -9,7 +8,7 @@ from tinymce import models as tinymce_models
 class Paper(models.Model):
     title = models.CharField(max_length=50)
     image = models.ImageField(upload_to="images", null=True)
-    description = tinymce_models.HTMLField(max_length=400, null=True)
+    description = models.TextField(max_length=400, null=True)
     content = models.FileField(upload_to="papers", null=True)
     date = models.DateField(default=date.today)
     
