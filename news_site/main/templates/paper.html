@@ -6,6 +6,15 @@
 {% endblock stylesheet %}
 
 {% block content %}
+
+<!-- 
+There are two copies of the iframe, both display the same newspaper.
+One is for mobile users and allows zooming in and out, 
+while the other is for desktop, and has a constant zoom level which users on chromium-based browsers can't change the zoom on.
+In paper.css, the iframe for mobile is hidden for users on desktop, and shown for users on mobile and tablet.
+The opposite happens for the iframe for desktop
+ -->
+
 <div id="pdf-container">
     <iframe src="{{ paper.content.url }}#toolbar=0&scrollbar=0&zoom=65"></iframe>
 </div>

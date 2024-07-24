@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+
+<!-- This is used as a base template for other templates in the site, other templates inherit this template -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block stylesheet %}{% endblock stylesheet %}
+    {% block stylesheet %}{% endblock stylesheet %} <!-- The css file can be inserted here -->
     <link rel="icon" href="{{ BASEDIR }}/static/main/img/favicon.png" type="image/x-icon"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +15,10 @@
 </head>
 <body>
     <div id="wrapper">
-
+        <!-- This line intserts the navbar to this template -->
         {% include 'navbar.html' %}
         
+        <!-- Here is where the main content of other templates get inserted -->
         {% block content %}
         {% endblock content %}
 

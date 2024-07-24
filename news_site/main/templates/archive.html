@@ -10,6 +10,7 @@
 <main id="main">
     <br>
     <div class="container">
+        <!-- Displays a list of links to all the newspapers ever published to the site -->
         <ul>
             {% for paper in object_list %}
                 <li><a class="archive-link" href="{% url 'paper-detail' paper.slug %}">{{ paper.date|date:"F Y" }} | {{ paper.title }}</a></li>

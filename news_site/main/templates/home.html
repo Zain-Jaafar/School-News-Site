@@ -10,6 +10,8 @@
 <main id="main">
     <br>
     <div class="container">
+        <!-- This for loop displays a list of all posts with their respective images, titles, descriptions, and dates -->
+
         {% for paper in object_list %}
             <article class="post">
                 <a href="{% url 'paper-detail' paper.slug %}">
@@ -17,6 +19,7 @@
                     <div class="post-text">
                         <h2>{{ paper.title }}</h2>
                         <p>{{ paper.description|safe }}</p>
+                        <!-- the code date:"F Y" displays the date as month year, e.g. Jan 2024 -->
                         <p>{{ paper.date|date:"F Y" }}</p>
                     </div>
                 </a>

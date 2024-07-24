@@ -5,24 +5,24 @@ from .models import Paper
 
 # Create your views here.
 
+# Home page
 class HomeView(ListView):
     model = Paper
     template_name = "home.html"
-    ordering = ["-date"]
+    ordering = ["-date"] # Orders the list of posts by date reversed
 
+# Template for individual newspapers
 class PaperView(DetailView):
     model = Paper
     template_name = "paper.html"
 
+# About page
 class AboutView(TemplateView):
     template_name = "about.html"
 
+# Archive page
 class ArchiveView(ListView):
     model = Paper
     template_name = "archive.html"
     ordering = ["date"]
 
-
-# def render_items(request, item_name):
-#     item = get_object_or_404(Paper, content=item_name)
-#     return render(request, 'paper.html', {'item': item })
