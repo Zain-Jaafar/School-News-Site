@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "main",
+    "tinymce",
 ]
 
 MIDDLEWARE = [
@@ -142,3 +143,5 @@ MEDIA_URL = "/media/"
 
 if DEBUG:
     X_FRAME_OPTIONS = "SAMEORIGIN"
+
+DJANGO_SETTINGS_MODULE = os.getenv("DJANGO_SETTINGS_MODULE")
