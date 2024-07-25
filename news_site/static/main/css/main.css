@@ -99,7 +99,6 @@ a {
 }
 
 .post a {
-    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,6 +112,15 @@ a {
 .container {
     margin-left: var(--container-size-mobile);
     margin-right: var(--container-size-mobile);
+    display: flex;
+    flex-direction: column;
+}
+
+.post-seperator {
+    margin: 20px 0;
+    border: 1px solid #e4e4e4;
+    width: 85%;
+    align-self: center;
 }
 
 @media screen and (min-width: 768px) {
