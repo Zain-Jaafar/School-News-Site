@@ -28,6 +28,14 @@ a {
     color: black;
 }
 
+.page-heading {
+    font-size: 42px;
+}
+
+hr {
+    margin-bottom: 20px
+}
+
 #wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -150,6 +158,10 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
+    .page-heading {
+        font-size: 60px;
+    }
+    
     #footer-container {
         display: block;
         margin-left: var(--container-size-desktop);
