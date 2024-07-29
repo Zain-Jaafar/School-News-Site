@@ -14,7 +14,7 @@
 
         {% for paper in object_list %}
             <article class="post">
-                <a href="{% url 'paper-detail' paper.slug %}">
+                <a class="article-underline-hover" href="{% url 'paper-detail' paper.slug %}">
                     <img src="{{ paper.image.url }}" alt="cool pic">
                     <div class="post-text">
                         <h2>{{ paper.title }}</h2>
