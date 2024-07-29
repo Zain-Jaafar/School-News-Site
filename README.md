@@ -17,41 +17,28 @@ The [website](https://www.bdscnews.com) for the student-run newspaper puplicatio
 
 
 ## Todo List
-### Visual/Frontend
-- [x] post image size: make sure they are all 16:9 aspect ratio, will be displayed as 416x234 
+### Frontend/Visual
 - [x] make site responsive. 
-- [x] fix pdf zoom being static 
-- [x] fix link on the footer 
-- [x] remove border on the pdf 
-- [x] remove contact us page from the navbar menu (for now)
-- [x] Make archive list 
-- [x] order posts by date created
+- [x] Make archive page
 - [x] Add large page headings to archive and about us page
-- [x] add underline on hover effect for links
-- [ ] add **animated** underline on hover effect for links
-- [ ] Make a hamburger menu for mobile instead of the links.
-- [ ] fix the `a` tag for the home link in the footer from spanning the whole page
-- [x] use a styled `hr` tag instead of a `br` as a spacer between posts on the home page
-- [ ] add icon links to social media accounts when they are made. (Youtube, insta, etc.)
+- [ ] Make a hamburger menu for mobile
+- [x] Add spacers in-between articles
+- [ ] Add icon links to social media accounts when they are made. (Youtube, insta, etc.)
 
-
-### Backend
-- [x] remove the unnecessary `script` tag in base.html
-
-### Admin Panel
-- [x] make it so that you can change the date of posts
+### Backend/Admin Panel
+- [x] Make it so that you can change the date of posts
 - [ ] Find a good rich text editor that works in production
 - [ ] Make a system so that you can make and edit simple pages comprised of just text (like an about us page)
 
 ### Misc/SEO
-- [x] use article and main and footer and nav tags
-- [x] comment the code
-- [ ] implement type hinting
-- [x] make readme.md
-- [ ] make a small banner for when the site is under maintenance to tell people the site might be buggy/not work properly
-- [ ] make it so you dont have to wait for the whole image/pdf to load before it starts displaying (lazy loading? streaming? idk)
-- [ ] improve seo
-- [ ] add better analytics
+- [x] Use article and main and footer and nav tags
+- [x] Comment the code
+- [ ] Add type hinting
+- [x] Make readme.md
+- [ ] Make a small banner for when the site is under maintenance to tell people the site might be buggy/not work properly
+- [ ] Make it so you dont have to wait for the whole image/pdf to load before it starts displaying (lazy loading? streaming? idk)
+- [ ] Improve seo
+- [ ] Add better analytics
 
 
 ## Liscence
