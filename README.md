@@ -17,7 +17,7 @@ The [website](https://www.bdscnews.com) for the student-run newspaper puplicatio
 
 
 ## Todo List
-<details><summary>Visual/Frontend</summary>
+### Visual/Frontend
 - [x] post image size: make sure they are all 16:9 aspect ratio, will be displayed as 416x234 
 - [x] make site responsive. 
 - [x] fix pdf zoom being static 
@@ -34,19 +34,16 @@ The [website](https://www.bdscnews.com) for the student-run newspaper puplicatio
 - [x] use a styled `hr` tag instead of a `br` as a spacer between posts on the home page
 - [ ] add icon links to social media accounts when they are made. (Youtube, insta, etc.)
 
-</details>
 
-<details><summary>Backend</summary>
+### Backend
 - [x] remove the unnecessary `script` tag in base.html
-</details>
 
-<details><summary>Admin Panel</summary>
+### Admin Panel
 - [x] make it so that you can change the date of posts
 - [ ] Find a good rich text editor that works in production
 - [ ] Make a system so that you can make and edit simple pages comprised of just text (like an about us page)
-</details>
 
-<details><summary>Misc/SEO</summary>
+### Misc/SEO
 - [x] use article and main and footer and nav tags
 - [x] comment the code
 - [ ] implement type hinting
@@ -55,7 +52,6 @@ The [website](https://www.bdscnews.com) for the student-run newspaper puplicatio
 - [ ] make it so you dont have to wait for the whole image/pdf to load before it starts displaying (lazy loading? streaming? idk)
 - [ ] improve seo
 - [ ] add better analytics
-</details>
 
 
 ## Liscence
