@@ -17,10 +17,11 @@
                 <a class="article-underline-hover" href="{% url 'paper-detail' paper.slug %}">
                     <img src="{{ paper.image.url }}" alt="cool pic">
                     <div class="post-text">
-                        <h2>{{ paper.title }}</h2>
-                        <p>{{ paper.description|safe }}</p>
-                        <!-- the code date:"F Y" displays the date as month year, e.g. Jan 2024 -->
-                        <p>{{ paper.date|date:"F Y" }}</p>
+                        <div><h2>{{ paper.title }}</h2>
+                        <!-- safe means it will display html from the variable -->
+                        <p class="article-description">{{ paper.description|safe }}</p> </div>
+                        <!-- the code `date:"F Y"` displays the date as month year, e.g. Jan 2024 -->
+                        <p class="article-date">{{ paper.date|date:"F Y" }}</p>
                     </div>
                 </a>
             </article>

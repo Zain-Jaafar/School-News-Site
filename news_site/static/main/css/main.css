@@ -10,6 +10,8 @@
 
     --post-image-desktop-width: 416px;
     --post-image-desktop-height: 234px;
+
+    --translucent-text-opacity: 0.35;
 }
 
 * {
@@ -103,7 +105,7 @@ hr {
 }
 
 #footer-container p {
-    color: #bebebe;
+    opacity: var(--translucent-text-opacity);
 }
 
 .post a {
@@ -137,6 +139,10 @@ hr {
 
 .article-underline-hover:hover .post-text h2{
     text-decoration: underline;
+}
+
+.article-date {
+    opacity: var(--translucent-text-opacity);
 }
 
 @media screen and (min-width: 768px) {
@@ -201,14 +207,10 @@ hr {
     }
     
     .post-text {
-        margin-left: 20px;
+        margin-left: 26px;
         min-height: var(--post-image-desktop-height);
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: column;
-    }
-
-    .post-text h2 {
-        margin-top: 0px;
     }
 }
