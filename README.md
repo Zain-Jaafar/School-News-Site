@@ -41,4 +41,4 @@ The [website](https://www.bdscnews.com) for the student-run newspaper puplicatio
 - [ ] Add better analytics
 
 
-## Liscence
+## License
