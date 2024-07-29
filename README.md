@@ -1,5 +1,5 @@
 # BDSC Newspaper Site
-The [website](bdscnews.com) for the student-run newspaper puplication at BDSC.  
+The [website](https://www.bdscnews.com) for the student-run newspaper puplication at BDSC.  
 ![PythonAnywhere](https://img.shields.io/badge/pythonanywhere-%232F9FD7.svg?style=for-the-badge&logo=pythonanywhere&logoColor=151515)
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
@@ -14,7 +14,7 @@ The [website](bdscnews.com) for the student-run newspaper puplication at BDSC.
 3. [Liscence](#liscence)
 
 ## Site Link
-[bdscnews.com](bdscnews.com)
+[bdscnews.com](https://www.bdscnews.com)
 
 
 ## Todo List
