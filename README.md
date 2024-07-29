@@ -10,7 +10,7 @@ The [website](https://www.bdscnews.com) for the student-run newspaper puplicatio
 ## Table of Contents
 1. [Site link](#site-link)
 2. [Todo List](#todo-list)
-3. [Liscence](#liscence)
+3. [License](#license)
 
 ## Site Link
 [bdscnews.com](https://www.bdscnews.com)
