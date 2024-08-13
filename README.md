@@ -37,7 +37,7 @@ The [website](https://www.bdscnews.com) for the student-run newspaper publicatio
 - [ ] Make a small banner for when the site is under maintenance to tell people the site might be buggy/not work properly
 - [ ] Make it so you dont have to wait for the whole image/pdf to load before it starts displaying (lazy loading? streaming? idk)
 - [ ] Improve seo
-- [ ] Add better analytics
+- [x] Add better analytics
 
 
 ## License
