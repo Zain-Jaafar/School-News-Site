@@ -8,9 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% block stylesheet %}{% endblock stylesheet %} <!-- The css file can be inserted here -->
     <link rel="icon" href="{{ BASEDIR }}/static/main/img/favicon.png" type="image/x-icon"/>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>BDSC Newspaper</title>
 
     <!-- Google tag (gtag.js) -->
@@ -25,10 +31,8 @@
 </head>
 <body>
     <div id="wrapper">
-        <!-- This line intserts the navbar to this template -->
         {% include 'navbar.html' %}
         
-        <!-- Here is where the main content of other templates get inserted -->
         {% block content %}
         {% endblock content %}
 

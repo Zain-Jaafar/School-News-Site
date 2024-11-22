@@ -21,7 +21,10 @@
                         <!-- safe means it will display html from the variable -->
                         <p class="article-description">{{ paper.description|safe }}</p> </div>
                         <!-- the code `date:"F Y"` displays the date as month year, e.g. Jan 2024 -->
-                        <p class="article-date">{{ paper.date|date:"F Y" }}</p>
+                        <p class="article-date">
+                            <i class="fa-regular fa-calendar"></i>
+                            {{ paper.date|date:"F Y" }}
+                        </p>
                     </div>
                 </a>
             </article>
