@@ -27,14 +27,11 @@ The [website](https://www.bdscnews.com) for the student-run newspaper publicatio
 
 ### Backend/Admin Panel
 - [x] Make it so that you can change the date of posts
-- [ ] Find a good rich text editor that works in production
-- [ ] Make a system so that you can make and edit simple pages comprised of just text (like an about us page)
 
 ### Misc/SEO
 - [x] Use article and main and footer and nav tags
 - [x] Comment the code
 - [x] Make readme.md
-- [ ] Make a small banner for when the site is under maintenance to tell people the site might be buggy/not work properly
 - [ ] Make it so you dont have to wait for the whole image/pdf to load before it starts displaying (lazy loading? streaming? idk)
 - [ ] Improve seo
 - [x] Add better analytics
