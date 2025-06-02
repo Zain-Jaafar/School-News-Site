@@ -13,7 +13,7 @@ The [website](https://www.bdscnews.com) for the student-run newspaper publicatio
 3. [License](#license)
 
 ## Site Link
-[bdscnews.com](https://www.bdscnews.com)
+SITE SHUT DOWN DUE TO CLUB LEADERS NO LONGER WANTING TO CONTINUE
 
 
 ## Todo List
